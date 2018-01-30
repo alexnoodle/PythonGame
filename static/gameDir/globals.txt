@@ -1,0 +1,10 @@
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/UIS1.bbz
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/URS1.bbz
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/UCS1.bbz
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/CS1.bbz
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/RS1.bbz
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/MCS1.bbz
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/MRS1.bbz
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/queue
+C:\Users\Alex Schneider\Desktop\Python game/static/gameDir/liveStatus.txt

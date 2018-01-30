@@ -1,0 +1,48 @@
+<!-- Need array of the split strng of the player's URS1 line called "resourceArray"-->
+<!-- need an array of resource a names, index by ID -- Called "resource data"-->
+
+<html>
+{{resourceArray}}
+{{resourceData}}
+{{converterArray}}
+{{converterData}}
+<main>
+
+{%if resourceArray|length > converterArray|length %}
+
+    {%for resource in resourceArray%}
+
+
+        {%if loop.index <= converterArray|length%}
+
+            <p><div <span <form display:inline action="/buyPage" method="post"> <input size = "1" type="text" id="name" name= "quantitiy"/><button  type="submit">Buy</button></form>{{resourceData[loop.index-1]}} {{resource}}   </span> |
+            <span <form   action="/buyPage" method="post"> <input size = "1" type="text" id="name" name="user_name"/><button type="submit">Buy</button></form>  {{converterData[loop.index-1]}} {{converterArray[loop.index-1]}}</span></div></p>
+
+        {%else%}
+            <p><div<form action="/buyPage" method="post"> <input size = "1" type="text" id="name" name="user_name"/><button type="submit">Buy</button></form>{{resourceData[loop.index-1]}} {{resource}}</div></p>
+        {%endif%}
+
+
+
+
+
+    {% endfor %}
+
+{%else%}
+    {%for converter in converterArray%}
+
+
+        {%if loop.index <= resourceArray|length%}
+
+            <p>{{resourceData[loop.index-1]}} {{resourceArray[loop.index-1]}}    |    {{converterData[loop.index]}} {{converterArray}}</p>
+
+        {%else%}
+            <p>{{convertereData[loop.index]}} {{converter}}</p>
+        {%endif%}
+
+    {%endfor%}
+
+{%endif%}
+
+</main>
+</html>

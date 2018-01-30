@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Science Sells</title>
+</head>
+<body>
+
+<h1>Login to the science sells extravaganza</h1>
+
+{% if check %}
+    <p1>The username and password do not match. Please enter again</p1>
+    <form action='/' method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password" />
+    </div>
+
+    <div class="button">
+        <button type="submit">Login</button>
+    </div>
+{% else %}
+    <form action='/' method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password" />
+    </div>
+
+    <div class="button">
+        <button type="submit">Login</button>
+    </div>
+{% endif %}
+</form>
+</body>
+</html>
